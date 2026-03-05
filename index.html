@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>Crunchyroll Launcher</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: #16213e;
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      max-width: 380px;
+      width: 90%;
+      box-shadow: 0 0 40px rgba(249, 107, 28, 0.3);
+    }
+
+    .logo {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      color: #f96b1c;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .btn:active { opacity: 0.8; }
+
+    .btn-main {
+      background: #f96b1c;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: #0f3460;
+      color: #ccc;
+      font-size: 13px;
+      padding: 11px;
+    }
+
+    .tip {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .tip span {
+      color: #f96b1c;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🍊</div>
+    <h1>Crunchyroll Desktop</h1>
+    <p>Tap the button below to open Crunchyroll in desktop mode so you can log in and watch normally.</p>
+
+    <a class="btn btn-main" href="https://www.crunchyroll.com" target="_self">
+      ▶ Open Crunchyroll
+    </a>
+
+    <a class="btn btn-secondary" href="https://sso.crunchyroll.com/login" target="_self">
+      🔑 Go Straight to Login
+    </a>
+
+    <div class="tip">
+      After the page loads, tap <span>AA</span> in Safari's address bar → <span>Request Desktop Website</span> if it looks mobile.
+    </div>
+  </div>
+</body>
+</html>
